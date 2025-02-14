@@ -61,7 +61,7 @@ DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in enviro
 # MongoDB information
 DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://backsrmbot:backsrmbot@cluster0.hgzpw.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")   # IF Multiple Database Is False Then Fill Only This Database Url.
 DATABASE_NAME = environ.get('DATABASE_NAME', "backsrmbot")
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'backsrmbot')
+COLLECTION_NAME = environ.get('COLLECTION_NAME', 'vjcollection')
 
 MULTIPLE_DATABASE = bool(environ.get('MULTIPLE_DATABASE', False)) # Set True or False
 
@@ -91,7 +91,7 @@ PUBLIC_FILE_CHANNEL = environ.get('PUBLIC_FILE_CHANNEL', '') # Public Channel Us
 GRP_LNK = environ.get('GRP_LNK', 'https://t.me/srm_request_movie')
 CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/backsrm')
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'srm_request_movie') # Support Chat Link Without https:// or @
-OWNER_LNK = environ.get('OWNER_LNK', 'http://t.me/SRM_owner_Bot')
+OWNER_LNK = environ.get('OWNER_LNK', 'https://t.me/SRM_owner_Bot')
 
 # True Or False
 AI_SPELL_CHECK = bool(environ.get('AI_SPELL_CHECK', True))
