@@ -76,7 +76,7 @@ async def start(client, message):
         if CLONE_MODE == True:
             buttons.append([InlineKeyboardButton('ᴄʀᴇᴀᴛᴇ ᴏᴡɴ ᴄʟᴏɴᴇ ʙᴏᴛ', callback_data='clone')])
         reply_markup = InlineKeyboardMarkup(buttons)
-        m=await message.reply_sticker("CAACAgUAAxkBAAEKVaxlCWGs1Ri6ti45xliLiUeweCnu4AACBAADwSQxMYnlHW4Ls8gQMAQ") 
+        m=await message.reply_sticker("CAACAgUAAxkBAAIBcGe0h4n4YdxIIHpHle0PWL4IOuc8AAJ4BAAC4WR5VAMytrfFiRR5HgQ") 
         await asyncio.sleep(1)
         await m.delete()
         await message.reply_photo(
@@ -217,7 +217,7 @@ async def start(client, message):
             if CLONE_MODE == True:
                 buttons.append([InlineKeyboardButton('ᴄʀᴇᴀᴛᴇ ᴏᴡɴ ᴄʟᴏɴᴇ ʙᴏᴛ', callback_data='clone')])
             reply_markup = InlineKeyboardMarkup(buttons)
-            m=await message.reply_sticker("CAACAgUAAxkBAAIBrme8T71FdxQEGJ5QwaV2cjUgRZj7AAKaBgACOslZVDJej4TfsvhzHgQ") 
+            m=await message.reply_sticker("CAACAgUAAxkBAAIBcGe0h4n4YdxIIHpHle0PWL4IOuc8AAJ4BAAC4WR5VAMytrfFiRR5HgQ") 
             await asyncio.sleep(1)
             await m.delete()
             await message.reply_photo(
@@ -308,7 +308,7 @@ async def start(client, message):
         return
     
     elif data.split("-", 1)[0] == "DSTORE":
-        sts = await message.reply("<b>ᴘʟᴇᴀsᴇ ᴡᴀɪᴛ...</b>")
+        sts = await message.reply("<b>ᴘʟᴇᴀsᴇ ᴡᴀɪᴛ ʙᴀʙʏ...</b>")
         b_string = data.split("-", 1)[1]
         decoded = (base64.urlsafe_b64decode(b_string + "=" * (-len(b_string) % 4))).decode("ascii")
         try:
